@@ -1,0 +1,5 @@
+apiVersion: apps/v1
+kind: Deployment
+containers:
+  name: {{ .Chart.Name }}      
+  image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
